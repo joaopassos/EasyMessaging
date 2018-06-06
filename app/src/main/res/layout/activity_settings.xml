@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/defaultuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settings_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Display Name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/settings_image"
+        app:layout_constraintStart_toStartOf="@+id/settings_image"
+        app:layout_constraintTop_toBottomOf="@+id/settings_image" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Hi there! I am using Knowledge Exchange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_display_name" />
+
+    <Button
+        android:id="@+id/settings_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:text="Alterar Imagem"
+        app:layout_constraintEnd_toEndOf="@+id/settings_status"
+        app:layout_constraintStart_toStartOf="@+id/settings_status"
+        app:layout_constraintTop_toBottomOf="@+id/settings_status" />
+
+    <Button
+        android:id="@+id/settings_status_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Alterar Status"
+        app:layout_constraintEnd_toEndOf="@+id/settings_image_btn"
+        app:layout_constraintStart_toStartOf="@+id/settings_image_btn"
+        app:layout_constraintTop_toBottomOf="@+id/settings_image_btn" />
+
+
+</android.support.constraint.ConstraintLayout>
