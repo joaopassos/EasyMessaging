@@ -38,6 +38,7 @@ public class ChatsFragment extends Fragment {
     private DatabaseReference mConvDatabase;
     private DatabaseReference mMessageDatabase;
     private DatabaseReference mUsersDatabase;
+    private DatabaseReference mFriendsDatabase;
 
     private FirebaseAuth mAuth;
 
@@ -68,6 +69,8 @@ public class ChatsFragment extends Fragment {
         mUsersDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
         mMessageDatabase = FirebaseDatabase.getInstance().getReference().child("messages").child(mCurrent_user_id);
         mUsersDatabase.keepSynced(true);
+        mFriendsDatabase = FirebaseDatabase.getInstance().getReference().child("Friends").child(mCurrent_user_id);
+        mFriendsDatabase.keepSynced(true);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setReverseLayout(true);
@@ -85,13 +88,14 @@ public class ChatsFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        Query conversationQuery = mConvDatabase.orderByChild("timestamp");
+        //Query conversationQuery = mConvDatabase.orderByChild("timestamp");
 
         FirebaseRecyclerAdapter<Conv, ConvViewHolder> firebaseConvAdapter = new FirebaseRecyclerAdapter<Conv, ConvViewHolder>(
                 Conv.class,
                 R.layout.users_single_layout,
                 ConvViewHolder.class,
-                conversationQuery
+                //conversationQuery
+                mFriendsDatabase
         ) {
             @Override
             protected void populateViewHolder(final ConvViewHolder convViewHolder, final Conv conv, int i) {

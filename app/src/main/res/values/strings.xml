@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">FirebaseTest</string>
+    <string name="app_name">Easy Messaging</string>
     <string name="btnRegister">Register</string>
-    <string name="display_name">Display Name</string>
+    <string name="display_name">Nome</string>
     <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="log_out">Log Out</string>
+    <string name="password">Senha</string>
+    <string name="log_out">Sair</string>
     <string name="entrar">Entrar</string>
     <string name="login_senha">Senha</string>
     <string name="login_email">Email</string>
@@ -12,6 +12,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="all_users">All Users</string>
+    <string name="all_users">Todos Usuários</string>
     <string name="configura_es">Configurações</string>
 </resources>

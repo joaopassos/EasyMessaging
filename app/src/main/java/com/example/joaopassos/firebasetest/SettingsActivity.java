@@ -234,7 +234,7 @@ public class SettingsActivity extends AppCompatActivity {
                                                 if(task.isSuccessful()){
 
                                                     mProgressDialog.dismiss();
-                                                    Toast.makeText(SettingsActivity.this,"Success Uploading", Toast.LENGTH_LONG).show();
+                                                    Toast.makeText(SettingsActivity.this,"Alterada com sucesso", Toast.LENGTH_LONG).show();
                                                 }
 
                                             }

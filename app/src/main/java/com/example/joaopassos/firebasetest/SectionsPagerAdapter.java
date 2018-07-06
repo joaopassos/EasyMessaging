@@ -41,11 +41,11 @@ class SectionsPagerAdapter extends FragmentPagerAdapter{
 
         switch(position){
             case 0:
-                return "REQUESTS";
+                return "SOLICITAÇÕES";
             case 1:
-                return "CHATS";
+                return "CONVERSAS";
             case 2:
-                return "FRIENDS";
+                return "AMIGOS";
 
             default:
                 return null;

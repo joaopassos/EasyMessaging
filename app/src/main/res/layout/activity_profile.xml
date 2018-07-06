@@ -49,26 +49,31 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="140dp"
         android:text="Total Amigos"
+        android:visibility="invisible"
         tools:layout_editor_absoluteX="157dp"
         tools:layout_editor_absoluteY="383dp" />
 
     <Button
         android:id="@+id/profile_send_req_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
+        android:background="@color/colorPrimary"
         android:text="Enviar Solicitação"
+        android:textColor="@android:color/white"
         tools:layout_editor_absoluteX="98dp"
         tools:layout_editor_absoluteY="411dp" />
 
     <Button
         android:id="@+id/profile_decline_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
-        android:text="Rejeitar Solicitação" />
+        android:background="@android:color/holo_red_dark"
+        android:text="Rejeitar Solicitação"
+        android:textColor="@android:color/white" />
 </RelativeLayout>

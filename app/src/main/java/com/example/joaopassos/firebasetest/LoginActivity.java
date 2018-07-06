@@ -97,7 +97,7 @@ public class LoginActivity extends AppCompatActivity {
                     } catch (FirebaseAuthInvalidCredentialsException e) {
                         error = "Senha Invalida!";
                     } catch (Exception e) {
-                        error = "Default error!";
+                        error = "Verifique se há conexão com a internet";
                         e.printStackTrace();
                     }
 

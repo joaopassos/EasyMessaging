@@ -37,7 +37,7 @@ public class UsersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_users);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Usuarios");
+        getSupportActionBar().setTitle("Usuários");
 
         mUsersDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 

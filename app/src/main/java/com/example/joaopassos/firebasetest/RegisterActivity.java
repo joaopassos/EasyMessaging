@@ -105,7 +105,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     HashMap<String, String> userMap = new HashMap<>();
                     userMap.put("name",display_name);
-                    userMap.put("status", "Hi there! I am using Knowledge Exchange.");
+                    userMap.put("status", "Olá! Estou usando Easy Messaging.");
                     userMap.put("image", "default");
                     userMap.put("thumb_image", "default");
 
@@ -137,7 +137,7 @@ public class RegisterActivity extends AppCompatActivity {
                     } catch (FirebaseAuthUserCollisionException e) {
                         error = "Conta Existente!";
                     } catch (Exception e) {
-                        error = "Erro Desconhecido!";
+                        error = "Verifique se há conexão com a internet";
                         e.printStackTrace();
                     }
 

@@ -1,6 +1,7 @@
 package com.example.joaopassos.firebasetest;
 
 import android.app.ProgressDialog;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -58,7 +59,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Usuário");
+
 
         final String user_id = getIntent().getStringExtra("user_id");
 
@@ -98,6 +99,7 @@ public class ProfileActivity extends AppCompatActivity {
 
                 mProfileName.setText(display_name);
                 mProfileStatus.setText(status);
+                getSupportActionBar().setTitle(display_name);
 
                 Picasso.with(ProfileActivity.this).load(image).placeholder(R.drawable.defaultuser).into(mProfileImage);
 
